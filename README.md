@@ -1,16 +1,37 @@
-# React + Vite
+This is a simple Dice Game built using React. The game allows users to select a number, roll a dice, and earn or lose points based on the result. It is a beginner-friendly project focused on React concepts like components, props, state management, and conditional rendering.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Start screen with "Play Now" button
+Select a number between 1 to 6
+Roll a dice by clicking the dice image
+Score increases if selected number matches dice number
+Score decreases by 2 if guess is wrong
+Reset score functionality
+Show/Hide game rules
+Simple and responsive UI using CSS Modules
+Project Structure
 
-Currently, two official plugins are available:
+The project contains two main screens:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+DicePageOne
+This is the starting screen of the game. It shows a welcome UI and a Play Now button. When clicked, it starts the game.
 
-## React Compiler
+DicePageTwo
+This is the main game screen. It contains:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Score display
+Number selection (1 to 6)
+Dice rolling logic
+Reset button
+Rules section
+How the Game Works
 
-## Expanding the ESLint configuration
+First, the user selects a number from 1 to 6. Then the user clicks on the dice image to roll it. A random number between 1 and 6 is generated.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If the selected number matches the dice number, the score increases by the dice value. If it does not match, 2 points are deducted from the score. The user can also reset the game anytime or view the rules.
+
+Technologies Used
+React (Functional Components)
+useState Hook
+CSS Modules
+JavaScript (ES6+)
