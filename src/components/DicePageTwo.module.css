@@ -1,0 +1,115 @@
+.dicepagetwomaincont {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dicepagetwoinnercont {
+    width: 90%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.dicetwouppercont {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width : 699px){
+    .dicetwouppercont{
+        justify-content: center;
+    }
+}
+
+.scorecont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 250px;
+}
+
+.scorecount {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 0.5;
+}
+
+.scoretext {
+    font-size: 1.52rem;
+    font-weight: 800;
+}
+
+.error {
+    color: red;
+}
+
+.numbercont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+@media (max-width:422px){
+    .numbercont{
+        align-items: center;
+    }
+}
+
+.numberdiv {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.numberdiv p {
+    padding: 10px 15px;
+    border: 1px solid black;
+    font-weight: 700;
+    cursor: pointer;
+    flex: 1;
+    max-width: 40px;
+}
+
+.selectnumtxt {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.dicetwolowercont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dicetwolowercont img {
+    width: 200px;
+}
+
+
+.rulescont {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    background-color: rgb(247, 233, 235);
+    padding: 20px;
+}
+
+.rulescont h2 {
+    margin-bottom: 20px;
+}
+
+.rulescont p {
+    margin-bottom: 5px;
+}
